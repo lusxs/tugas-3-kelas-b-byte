@@ -1,6 +1,6 @@
 import Mahesa from "../model/MahesaModel.js";
 
-export const getMahesa = async (req, res) => {
+export const getMahesagi = async (req, res) => {
     try {
         const response = await Mahesa.findAll();
         res.status(200).json(response);

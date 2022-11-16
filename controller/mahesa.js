@@ -30,3 +30,29 @@ export const createMahesa = async (req, res) => {
         console.log(error.message);                
     }
 };
+
+export const updateMahesa = async (req,res) => {
+    try {
+        await Mahesa.update(req.body, {
+            where: {
+                id: req.params.id,
+            },
+        });
+        res.status(200).json({ msg: "Mahesa Updated" });
+    } catch (error) {
+        console.log(error.message);                
+    }
+};
+
+export const deleteMahesa = async (req, res) => {
+    try {
+        await Mahesa.destroy ({
+            where: {
+                id: req.params.id,
+            },
+        });
+        res.status(200).json({ msg: "Mahesa Deleted" });
+    } catch (error) {
+        console.log(error.message);                
+    }
+};

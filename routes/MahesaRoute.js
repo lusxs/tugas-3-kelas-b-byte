@@ -11,7 +11,7 @@ const router  = express.Router();
 
 router.get('/mahesas', getMahesa);
 router.get('/mahesa/:id', getMahesaById);
-router.post('./mahesa', createMahesa);
+router.post('/mahesa', createMahesa);
 router.patch('/mahesa/:id', updateMahesa);
 router.delete('/mahesa/:id', deleteMahesa);
 

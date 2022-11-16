@@ -1,0 +1,27 @@
+GET http://localhost:5000/mahesas
+
+###
+GET http://localhost:5000/mahesa/1
+
+###
+POST http://localhost:5000/mahesa
+Content-Type: application/json
+
+{
+    "nama": "nama3",
+    "lokasi": "lokasi",
+    "desk" : "lorem ipsum"
+}
+
+###
+PATCH http://localhost:5000/mahesa/1
+Content-Type: application/json
+
+{
+    "nama": "nama1",
+    "lokasi": "lokasi1",
+    "desk" : "lorem ipsum"
+}
+
+###
+DELETE http://localhost:5000/mahesa/3

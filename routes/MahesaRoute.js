@@ -2,14 +2,14 @@ import express from 'express';
 import { 
     createMahesa, 
     deleteMahesa, 
-    getMahesas, 
+    getMahesa, 
     getMahesaById, 
     updateMahesa 
 } from '../controller/mahesa.js';
 
 const router  = express.Router();
 
-router.get('/mahesas', getMahesas);
+router.get('/mahesas', getMahesa);
 router.get('/mahesa/:id', getMahesaById);
 router.post('/mahesa', createMahesa);
 router.patch('/mahesa/:id', updateMahesa);
